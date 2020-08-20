@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
+	<meta name="author" content="GeeksLabs">
+	<meta name="keyword" content="bary">
+	<link rel="shortcut icon" href="http://bary.localhost/assets/img/bary.ico">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
+	<title>ZOOM IN OUT TEST</title>
+
+	<!-- Bootstrap CSS -->
+
+		<link type="text/css" rel="stylesheet" href="./css/jquery.fs.zoomer.css?123456789" />
+	<!-- javascripts -->
+		<script type="text/javascript" src="./js/jquery.js?890890"></script>
+		<script type="text/javascript" src="./js/jquery-1.8.3.min.js?3456789"></script>
+		<script type="text/javascript" src="./js/jquery.fs.zoomer.js?3456789"></script>
+		
+		<style>
+		.zoomer_wrapper {
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			height: 500px;
+			margin: 10px 0;
+			overflow: hidden;
+			width: 100%;
+		}
+		</style>
+</head>
+
+<body>
+
+	<div class="zoomer_wrapper zoomer_basic"" id="img_div">
+		<img id="1" alt="サンプル" src="./img/1.svg" />
+		<img id="2" alt="サンプル" src="./img/2.svg" />
+		<img id="3" alt="サンプル" src="./img/3.svg" />
+		
+		<img id="4" alt="サンプル" src="./img/iphone6-plus.jpg" />
+	</div>
+	
+	<p height="500px">
+	</p>
+	<div>
+		<button type="button" class="btn btn-back"  id="back_btn">ZOOM IN (+5%)</button>
+		
+		<button type="button" class="btn btn-back"  id="back_btn">ZOOM OUT (-5%)</button>
+	</div>
+	
+	
+
+	<script>
+	$(document).ready(function() {
+	  $(".zoomer_basic").zoomer();
+	});
+	</script>
+	
+</body>
+
+</html>

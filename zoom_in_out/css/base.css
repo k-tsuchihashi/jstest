@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+/** print **/
+@media print {
+	body {
+		-webkit-print-color-adjust: exact;
+	}
+}
+
+p {
+	display: block;
+	height: 100px;
+}
+
+/** common **/
+.page-header {
+	margin: 8px 0 5px !important;
+}
